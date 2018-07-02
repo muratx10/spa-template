@@ -1,0 +1,506 @@
+<!DOCTYPE HTML>
+<head>
+    <meta charset="utf-8">
+    <meta lang="ru">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги и цены</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="fonts/font.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/icons.css">
+    <link rel="stylesheet" href="styles/slick.css"/>
+    <link rel="stylesheet" href="styles/slick-theme.css"/>
+    <link rel="stylesheet" href="styles/jquery-confirm.css">
+    <link rel="stylesheet" href="styles/jquery.timepicker.css">
+    <link rel="stylesheet" href="styles/daterangepicker.css">
+    <style>
+        /* fonts for project */
+        @font-face {
+            font-family: 'extra bold';
+            src: url('fonts/extra bold.woff') format('woff')
+        }
+
+        @font-face {
+            font-family: 'bold';
+            src: url('fonts/bold.woff') format('woff')
+        }
+
+        @font-face {
+            font-family: 'book';
+            src: url('fonts/book.woff') format('woff')
+        }
+
+        @font-face {
+            font-family: 'regular';
+            src: url('fonts/regular.woff') format('woff')
+        }
+
+        @font-face {
+            font-family: 'extra light';
+            src: url('fonts/extra light.woff') format('woff')
+        }
+
+        @font-face {
+            font-family: 'light';
+            src: url('fonts/light.woff') format('woff')
+        }
+
+        @font-face {
+            font-family: 'light italic';
+            src: url('fonts/light italic.woff.woff') format('woff')
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <!--TO TOP-->
+    <div class="to-top">
+        <a href="#" class="to-top-link"></a>
+    </div>
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="header__share-social-media">
+            <span class="icon-facebook"></span>
+            <span class="icon-twitter"></span>
+            <span class="icon-skype"></span>
+        </div>
+        <div class="header__location">
+            <a href="https://yandex.com/maps/-/CBq7eZXQDB" target="_blank" class="header__link"><span
+                    class="icon-pin-locate"></span>&nbsp;г.Брест, ул.Комсомольская 34</a>
+        </div>
+        <div class="header__phone-call">
+            <a href="tel:+375336012012" class="header__link"><span class="icon-phone2"></span>&nbsp;+375 (33) 6 012 012</a>
+        </div>
+        <hr class="header_line">
+    </div>
+    <!-- MENU BAR -->
+    <nav class="menubar">
+        <a class="logo_link" href="index.html">
+            <img src="images/logo-new.svg" alt="Here is the logo of Stomadeus dental">
+        </a>
+        <div id="menuToggle">
+            <input type="checkbox" id="burgerMenuBox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menubar__main-menu">
+            <li class="menubar__main-menu__item"><a class="menubar__main-menu__link" href="index.html"><span
+                    class="icon-home">&nbsp;</span>Главная</a>
+            </li><!--
+		     -->
+            <li class="menubar__main-menu__item"><a id="active-page" class="menubar__main-menu__link submenu_lvl-1" id="submenu1"
+                                                    href="#"><span
+                    class="icon-price-tags">&nbsp;</span>Услуги и цены&nbsp;<span class="submenu_indicator">&nbsp;&#8250;</span></a>
+                <ul class="menubar__submenu" id="firstSubmenu">
+                    <li class="menubar__submenu__item"><a href="services_and_prices.html"
+                                                          class="menubar__submenu__link">Цены на услуги</a>
+                    </li>
+                    <li class="menubar__submenu__item"><a href="consult.html" class="menubar__submenu__link">Консультация
+                        врача</a>
+                    </li>
+                    <li class="menubar__submenu__item"><a href="dental-treatment.html" class="menubar__submenu__link">Лечение зубов</a></li>
+                    <li class="menubar__submenu__item"><a href="periodontology.html" class="menubar__submenu__link">Пародонтология</a>
+                    </li>
+                    <li class="menubar__submenu__item"><a href="surgery.html" class="menubar__submenu__link">Хирургия и
+                        имплантация</a></li>
+                    <li class="menubar__submenu__item"><a href="prosthesis.html" class="menubar__submenu__link">Протезирование
+                        зубов</a></li>
+                    <li class="menubar__submenu__item"><a href="whitening.html" class="menubar__submenu__link">Отбеливание зубов</a>
+                    </li>
+                    <li class="menubar__submenu__item"><a href="kids-dental.html" class="menubar__submenu__link">Детская
+                        стоматология</a></li>
+                </ul>
+            </li><!--
+		     -->
+            <li class="menubar__main-menu__item"><a class="menubar__main-menu__link" href="news.html"><span class="icon-news">&nbsp;</span>Акции</a></li><!--
+		 	 -->
+            <li class="menubar__main-menu__item"><a class="menubar__main-menu__link" id="submenu2" href="#"><span
+                    class="icon-info">&nbsp;</span>Полезно
+                знать&nbsp;<span class="submenu_indicator">&nbsp;&#8250;</span></a>
+                <ul class="menubar__submenu" id="secondSubmenu">
+                    <li class="menubar__submenu__item"><a href="advises.html" class="menubar__submenu__link">Советы стоматолога</a>
+                    </li>
+                </ul>
+            </li><!--
+		 	 -->
+            <li class="menubar__main-menu__item"><a class="menubar__main-menu__link" href="contacts.html"><span
+                    class="icon-address">&nbsp;</span>Контакты</a></li><!--
+		 	 -->
+            <li class="menubar__main-menu__item"><a class="menubar__main-menu__link" href="about.html"><span
+                    class="icon-user-tie">&nbsp;</span>О нас</a></li>
+        </ul>
+    </nav>
+</div>
+<!-- MAIN CONTENT -->
+<div class="wrapper-out-block">
+    <div class="wrapper-inner">
+        <h2 class="title_big">Наши цены</h2>
+        <h2 class="page-to-link"><a href="about.html" class="onlineRegButton">Записаться на приём</a></h2>
+    </div>
+</div>
+
+<div class="wrapper">
+    <!--<h2 class="block__title-2">СТОИМОСТЬ НАШИХ УСЛУГ</h2>-->
+    <p class="block__text">Ценовая политика нашей клиники: стабильность, лояльность и доступность. Возможность
+        корректирования стоимости лечения в зависимости от запланированных вмешательств.</p>
+    <div class="service-and-price__block">
+        <table class="prices">
+            <tr class="head-title">
+                <th>Стоимость услуг клиники «Стомадеус»</th>
+                <th>в рублях (BYN)</th>
+            </tr>
+            <tr>
+                <td>Телерентгенография (ТРГ)</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Ортопантоммограма (Панорамный снимок всех зубов)</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Компьютерная томография</td>
+                <td>от&nbsp;50</td>
+            </tr>
+            <tr>
+                <td>Консультативно-дианостический прием с составлением плана лечения</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Диагностика всей полости рта с использованием микроскопа</td>
+                <td>50</td>
+            </tr>
+            <tr class="head-title">
+                <th colspan='2'>Терапия</th>
+            </tr>
+            <tr>
+                <td>Лечение кариеса</td>
+                <td>от&nbsp;80</td>
+            </tr>
+            <tr>
+                <td>Эстетико-анатомическая реставрация</td>
+                <td>от&nbsp;250</td>
+            </tr>
+            <tr>
+                <td>Лечение пульпита с временной пломбой (в зависимости от количества каналов)</td>
+                <td>от&nbsp;200</td>
+            </tr>
+            <tr>
+                <td>Лечение периодонтита с временной пломбой (в зависимости от количества каналов)</td>
+                <td>от&nbsp;350</td>
+            </tr>
+            <tr>
+                <td>Постоянная пломба (с постановкой)</td>
+                <td>от&nbsp;50</td>
+            </tr>
+            <tr class="head-title">
+                <th colspan="2">Детская стоматология</th>
+            </tr>
+            <tr>
+                <td>Лечение кариеса временного зуба</td>
+                <td>от&nbsp;50</td>
+            </tr>
+            <tr>
+                <td>Лечение пульпита молочного зуба</td>
+                <td>от&nbsp;100</td>
+            </tr>
+            <tr>
+                <td>Коронка на временные зубы (1 ед.)</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>Лечение кариеса с использованием системы ICON</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Диагностика аппаратом DIAGNOcam (Диагнокам)</td>
+                <td>15</td>
+            </tr>
+            <tr class="head-title">
+                <th colspan="2">Хирургия</th>
+            </tr>
+            <tr>
+                <td>Удаление молочного зуба</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Удаление постоянного зуба неосложненное</td>
+                <td>от&nbsp;50</td>
+            </tr>
+            <tr>
+                <td>Удаление постоянного зуба сложное</td>
+                <td>от&nbsp;100</td>
+            </tr>
+            <tr>
+                <td>Удаление постоянного зуба (ретинированного/дистопированного)</td>
+                <td>от&nbsp;140</td>
+            </tr>
+            <tr class="head-title">
+                <th colspan="2">Имплантация зубов</th>
+            </tr>
+            <tr>
+                <td>Установка имплантата</td>
+                <td>от&nbsp;750</td>
+            </tr>
+            <tr>
+                <td>Установка формирователя десны</td>
+                <td>от&nbsp;130</td>
+            </tr>
+            <tr class="head-title">
+                <th colspan="2">Ортопедия</th>
+            </tr>
+            <tr>
+                <td>Коронка металлокерамическая стандарт</td>
+                <td>350</td>
+            </tr>
+            <tr>
+                <td>Керамическая вкладка</td>
+                <td>от&nbsp;550</td>
+            </tr>
+            <tr>
+                <td>Съемный протез</td>
+                <td>от&nbsp;300</td>
+            </tr>
+            <tr>
+                <td>Винир керамический</td>
+                <td>от&nbsp;600</td>
+            </tr>
+            <tr>
+                <td>Коронка на Имплантат</td>
+                <td>от&nbsp;650</td>
+            </tr>
+            <tr class="head-title">
+                <th colspan="2">Пародонтология</th>
+            </tr>
+            <tr>
+                <td>Снятие мягкого налета аппаратом PROPHYFLEX</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Снятие твердых зубных отложение (методом ультрозвука)</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Покрытие зубов реминелизирующим препаратом</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Лечение с применением аппарата Vector (в области 1-го зуба)</td>
+                <td>30</td>
+            </tr>
+            <tr class="head-title">
+                <th colspan="2">Ортодонтия</th>
+            </tr>
+            <tr>
+                <td>Металлическая лигатурная Брекет-Система вместе с установкой на 1 челюсть</td>
+                <td>от&nbsp;700</td>
+            </tr>
+            <tr>
+                <td>Комбинированная лигатурная Брекет-Система Керамика+Металл на 1 челюсть</td>
+                <td>от&nbsp;850</td>
+            </tr>
+            <tr>
+                <td>Металлическая Самолигирующаяся Брекет-Система Damon Q вместе с установкой на 1 челюсть</td>
+                <td>от&nbsp;950</td>
+            </tr>
+            <tr>
+                <td>Керамическая Самолигирующаяся Брекет-Система Damon Clear вместе с установкой на 1 челюсть</td>
+                <td>от&nbsp;1100</td>
+            </tr>
+            <tr>
+                <td>Керамическая лигатурная Брекет-система Clarity Advanced на 1 челюсть</td>
+                <td>от&nbsp;1000</td>
+            </tr>
+            <tr>
+                <td>Ежемесяченое посещение врача-ортодонта при лечении на Брекет-Системе</td>
+                <td>150</td>
+            </tr>
+            <tr class="head-title">
+                <th colspan="2">Отбеливание</th>
+            </tr>
+            <tr>
+                <td>Консультация с составление плана лечения</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Фотоотбеливание системой Beyond (1 челюсть)</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td>Фотоотбеливание системой Beyond (2 челюсти)</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>Отбеливание системой Opalescence Boost (2 челюсти)</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td>Отбеливание OPALESCENCE PF (каппы 1 шт)</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="block__text head-title" id="comment">***Точную стоимость лечения Вы сможете
+                    узнать после консультации и диагностики.
+                </td>
+            </tr>
+        </table>
+        <div class="service__links">
+            <a href="consult.html" class="service__links__item">Консультация врача</a>
+            <a href="dental-treatment.html" class="service__links__item">Лечение зубов</a>
+            <a href="periodontology.html" class="service__links__item">Пародонтология</a>
+            <a href="surgery.html" class="service__links__item">Хирургия и имплантация</a>
+            <a href="prosthesis.html" class="service__links__item">Протезирование зубов</a>
+            <a href="whitening.html" class="service__links__item">Отбеливание зубов</a>
+            <a href="kids-dental.html" class="service__links__item">Детская стоматология</a>
+            <a href="mailto:muratx10@gmail.com" class="adblock"
+               title="Нажмите сюда чтоб связаться с администратором по электронной почте"></a>
+        </div>
+    </div>
+</div>
+
+<!--CALLBACK MODAL-->
+<div class="modal-block" id="modal-window-callback">
+    <form class="modal__form">
+        <fieldset>
+            <legend>Заказать звонок</legend>
+            <div class="usrName">
+                <label for="enter-name">Имя</label>
+                <input type="text" id="enter-name" name="enter-name" placeholder="Введите ваше имя" value="" required
+                       oninvalid="this.setCustomValidity('Введите пожалуйста Ваше имя')">
+            </div>
+            <div class="usrPhone">
+                <label for="enterNumber">№ телефона:</label>
+                <input type="tel" id="enterNumber" name="enterNumber" placeholder="Введите ваш номер телефона" value=""
+                       maxlength="13" minlength="13" required
+                       oninvalid="this.setCustomValidity('Перед тем как оставить отзыв, оставьте свой номер для связи с Вами')">
+            </div>
+            <div class="time-pick">
+                <label for="#">Выберите удобное для Вас время:</label>
+                <div class="timepick-input">
+                    <label for="time-picker-1">с</label>
+                    <input type="text" id="time-picker-1" class="timepicker">
+                    <label for="time-picker-2">по</label>
+                    <input type="text" id="time-picker-2" class="timepicker">
+                </div>
+            </div>
+            <a href="#" id="submit-btn" class="submit-btn submitCallback">Отправить</a>
+            <a href="#" id="close-modal" class="submit-btn close-btn">Отменить</a>
+        </fieldset>
+    </form>
+</div>
+<!--ONLINE REGISTRATION MODAL-->
+<div class="modal-block" id="modal-window-onlineReg">
+    <form class="modal__form">
+        <fieldset>
+            <legend>Запись на прием онлайн</legend>
+            <div class="usrName">
+                <label for="enter-name">Имя</label>
+                <input type="text" id="enter-name" name="enter-name" placeholder="Введите ваше имя" value="" required
+                       oninvalid="this.setCustomValidity('Введите пожалуйста Ваше имя')">
+            </div>
+            <div class="usrSurname">
+                <label for="enter-surname">Фамилия</label>
+                <input type="text" id="enter-surname" name="enter-surname" placeholder="Введите вашу фамилию" value=""
+                       required
+                       oninvalid="this.setCustomValidity('Введите пожалуйста Вашу фамилию')">
+            </div>
+            <div class="usrOtherName">
+                <label for="enter-otherName">Отчество</label>
+                <input type="text" id="enter-otherName" name="enter-otherName" placeholder="Введите ваше отчество"
+                       value="" required
+                       oninvalid="this.setCustomValidity('Введите пожалуйста Ваше отчество')">
+            </div>
+            <div class="usrPhone">
+                <label for="enterNumber">№ телефона:</label>
+                <input type="tel" id="enterNumber" name="enterNumber" placeholder="Введите ваш номер телефона" value=""
+                       maxlength="13" minlength="13" required
+                       oninvalid="this.setCustomValidity('Перед тем как оставить отзыв, оставьте свой номер для связи с Вами')">
+            </div>
+            <div class="time-pick">
+                <label for="date-picker">Выберите дату:</label>
+                <input type="text" id="date-picker" value="">
+            </div>
+            <a href="#" id="submit-btn" class="submit-btn submitOnlinReg">Отправить</a>
+            <a href="#" id="close-modal" class="submit-btn close-btn">Отменить</a>
+        </fieldset>
+    </form>
+</div>
+
+<!-- FOOTER -->
+
+<div class="wrapper">
+    <div class="footer">
+        <div class="footer__contacts">
+            <h3 class="footer__contacts__title">Наши телефоны:</h3>
+            <a href="tel:+375336012012" class="footer__contacts__item"><span class="icon-mobile"></span>&nbsp;+375 (33)
+                6-012-012 (МТС)</a>
+            <a href="tel:+375336012012" class="footer__contacts__item"><span class="icon-mobile"></span>&nbsp;+375 (44)
+                6-012-012 (Velcom)</a>
+            <h3 class="footer__contacts__title">Наш электронный адрес:</h3>
+            <a href="mailto:muratx10@gmail.com" class="footer__contacts__item"><span class="icon-envelope">&nbsp;</span>info@stomadeus.by</a>
+        </div>
+        <div class="call-back">
+            <a href="#" class="call-back__item" id="callBackButton">Заказать звонок</a>
+            <a href="#" class="call-back__item onlineRegButton" id="onlineRegButton">Онлайн-запись</a>
+            <!-- здесь при клике должно быть модальное окно с формой -->
+            <a href="about.html#jump-to-map" class="call-back__item"></a>
+        </div>
+        <div class="footer__site-map">
+            <div class="footer__site-map__services-wrap">
+                <ul class="footer__site-map__services">
+                    <li class="site-map__services__item"><a href="consult.html" class="site-map__services__link">Консультация
+                        врача</a></li>
+                    <li class="site-map__services__item"><a href="dental-treatment.html" class="site-map__services__link">Лечение зубов</a>
+                    </li>
+                    <li class="site-map__services__item"><a href="periodontology.html" class="site-map__services__link">Пародонтология</a>
+                    </li>
+                    <li class="site-map__services__item"><a href="surgery.html" class="site-map__services__link">Хирургия и
+                        имплантация</a></li>
+                    <li class="site-map__services__item"><a href="prosthesis.html" class="site-map__services__link">Протезирование
+                        зубов</a></li>
+                    <li class="site-map__services__item"><a href="whitening.html" class="site-map__services__link">Отбеливание
+                        зубов</a></li>
+                    <li class="site-map__services__item"><a href="kids-dental.html" class="site-map__services__link">Детская
+                        стоматология</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__address">
+            <p>ЧУП &#171;Стомадеус&#187;,</p>
+            <p>&nbsp;г.Брест, ул.Комсомольская 34,</p>
+            <p>&nbsp;Почтовый индекс: 224000</p>
+            <div class="footer__payment">
+                <object data="images/visa.svg" type="image/svg+xml" width="30"></object>
+                <object data="images/mastercard.svg" type="image/svg+xml" width="30"></object>
+                <object data="images/maestro.svg" type="image/svg+xml" width="30"></object>
+                <object data="images/belcard.svg" type="image/svg+xml" width="30"></object>
+            </div>
+        </div>
+        <div class="footer__social">
+            <h3 class="footer__social__title">Мы в социальных сетях</h3>
+            <a href="#" class="footer__social__icon"><span class="icon-facebook">&nbsp;</span>Facebook</a>
+            <a href="#" class="footer__social__icon"><span class="icon-twitter">&nbsp;</span>Twitter</a>
+            <a href="#" class="footer__social__icon"><span class="icon-skype">&nbsp;</span>Skype</a>
+        </div>
+    </div>
+    <hr>
+    <div class="footer__copyright">
+        <span class="copyright">ЧУП «Стомадеус»&nbsp;&copy;&nbsp;2018г. Все права защищены</span>
+    </div>
+</div>
+
+
+<script src="scripts/jquery-3.3.1.min.js"></script>
+<script src="scripts/moment.min.js"></script>
+<script src="scripts/daterangepicker.js"></script>
+<script src="scripts/slick.min.js"></script>
+<script src="scripts/jquery-confirm.min.js"></script>
+<script src="scripts/SmoothScroll.js"></script>
+<script src="scripts/jquery.timepicker.min.js"></script>
+<script src="scripts/default.js"></script>
+
+</body>

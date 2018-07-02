@@ -1,0 +1,354 @@
+<!DOCTYPE HTML>
+<head>
+    <meta charset="utf-8">
+    <meta lang="ru">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пародонтология</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="fonts/font.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/icons.css">
+    <link rel="stylesheet" href="styles/slick.css"/>
+    <link rel="stylesheet" href="styles/slick-theme.css"/>
+    <link rel="stylesheet" href="styles/jquery-confirm.css">
+    <link rel="stylesheet" href="styles/jquery.timepicker.css">
+    <link rel="stylesheet" href="styles/daterangepicker.css">
+    <style>
+        /* fonts for project */
+        @font-face {
+            font-family: 'extra bold';
+            src: url('fonts/extra bold.woff') format('woff')
+        }
+
+        @font-face {
+            font-family: 'bold';
+            src: url('fonts/bold.woff') format('woff')
+        }
+
+        @font-face {
+            font-family: 'book';
+            src: url('fonts/book.woff') format('woff')
+        }
+
+        @font-face {
+            font-family: 'regular';
+            src: url('fonts/regular.woff') format('woff')
+        }
+
+        @font-face {
+            font-family: 'extra light';
+            src: url('fonts/extra light.woff') format('woff')
+        }
+
+        @font-face {
+            font-family: 'light';
+            src: url('fonts/light.woff') format('woff')
+        }
+
+        @font-face {
+            font-family: 'light italic';
+            src: url('fonts/light italic.woff.woff') format('woff')
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <!--TO TOP-->
+    <div class="to-top">
+        <a href="#" class="to-top-link"></a>
+    </div>
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="header__share-social-media">
+            <span class="icon-facebook"></span>
+            <span class="icon-twitter"></span>
+            <span class="icon-skype"></span>
+        </div>
+        <div class="header__location">
+            <a href="https://yandex.com/maps/-/CBq7eZXQDB" target="_blank" class="header__link"><span
+                    class="icon-pin-locate"></span>&nbsp;г.Брест, ул.Комсомольская 34</a>
+        </div>
+        <div class="header__phone-call">
+            <a href="tel:+375336012012" class="header__link"><span class="icon-phone2"></span>&nbsp;+375 (33) 6 012 012</a>
+        </div>
+        <hr class="header_line">
+    </div>
+    <!-- MENU BAR -->
+    <nav class="menubar">
+        <a class="logo_link" href="index.html">
+            <img src="images/logo-new.svg" alt="Here is the logo of Stomadeus dental">
+        </a>
+        <div id="menuToggle">
+            <input type="checkbox" id="burgerMenuBox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menubar__main-menu">
+            <li class="menubar__main-menu__item"><a class="menubar__main-menu__link"  href="index.html"><span
+                    class="icon-home">&nbsp;</span>Главная</a>
+            </li><!--
+		     -->
+            <li class="menubar__main-menu__item"><a class="menubar__main-menu__link submenu_lvl-1" id="active-page" id="submenu1"
+                                                    href="#"><span
+                    class="icon-price-tags">&nbsp;</span>Услуги и цены&nbsp;<span class="submenu_indicator">&nbsp;&#8250;</span></a>
+                <ul class="menubar__submenu" id="firstSubmenu">
+                    <li class="menubar__submenu__item"><a href="services_and_prices.html"
+                                                          class="menubar__submenu__link">Цены на услуги</a>
+                    </li>
+                    <li class="menubar__submenu__item"><a href="consult.html" class="menubar__submenu__link">Консультация
+                        врача</a>
+                    </li>
+                    <li class="menubar__submenu__item"><a href="dental-treatment.html" class="menubar__submenu__link">Лечение
+                        зубов</a></li>
+                    <li class="menubar__submenu__item"><a href="periodontology.html" class="menubar__submenu__link">Пародонтология</a>
+                    </li>
+                    <li class="menubar__submenu__item"><a href="surgery.html" class="menubar__submenu__link">Хирургия и
+                        имплантация</a></li>
+                    <li class="menubar__submenu__item"><a href="prosthesis.html" class="menubar__submenu__link">Протезирование
+                        зубов</a></li>
+                    <li class="menubar__submenu__item"><a href="whitening.html" class="menubar__submenu__link">Отбеливание зубов</a>
+                    </li>
+                    <li class="menubar__submenu__item"><a href="kids-dental.html" class="menubar__submenu__link">Детская
+                        стоматология</a></li>
+                </ul>
+            </li><!--
+		     -->
+            <li class="menubar__main-menu__item"><a class="menubar__main-menu__link" href="news.html"><span class="icon-news">&nbsp;</span>Акции</a></li><!--
+		 	 -->
+            <li class="menubar__main-menu__item"><a class="menubar__main-menu__link" id="submenu2" href="#"><span
+                    class="icon-info">&nbsp;</span>Полезно
+                знать&nbsp;<span class="submenu_indicator">&nbsp;&#8250;</span></a>
+                <ul class="menubar__submenu" id="secondSubmenu">
+                    <li class="menubar__submenu__item"><a href="advises.html" class="menubar__submenu__link">Советы стоматолога</a>
+                    </li>
+                </ul>
+            </li><!--
+		 	 -->
+            <li class="menubar__main-menu__item"><a class="menubar__main-menu__link" href="contacts.html"><span
+                    class="icon-address">&nbsp;</span>Контакты</a></li><!--
+		 	 -->
+            <li class="menubar__main-menu__item"><a class="menubar__main-menu__link" href="about.html"><span
+                    class="icon-user-tie">&nbsp;</span>О нас</a></li>
+        </ul>
+    </nav>
+</div>
+<!-- MAIN CONTENT -->
+<div class="wrapper-out-block">
+    <div class="wrapper-inner">
+        <h2 class="title_big">Пародонтология</h2>
+        <h2 class="page-to-link">
+            <a href="about.html" class="onlineRegButton">Записаться&nbsp;на&nbsp;приём</a>&nbsp;&#124;&nbsp;<a href="services_and_prices.html">Цены</a>
+        </h2>
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="service-and-price__block">
+        <div class="service-info">
+            <h2 class="block__title">Лечение окружающих зуб тканей</h2>
+            <p class="service-info__accent">Что такое пародонтология?</p>
+            <p class="article_text">Пародонтология – это раздел стоматологии о диагностике, профилактике и лечении
+                пародонта (околозубных тканей). <br> <br>
+
+                Пародонт удерживает зубы, регулирует жевательную нагрузку, выполняет защитную и регенеративную функции.
+                Сложная структура пародонта делает его легко уязвимым для различного рода заболеваний. К сожалению, на
+                сегодняшний день распространенность болезней пародонта, по данным ряда публикаций, достигает 98%.</p>
+            <div class="service-info__img">
+                <img src="images/gallery/services%20gallery/periodont.jpg" alt="Пародонтология демонстрационное изображение">
+                <img src="images/gallery/services%20gallery/periodont2.jpg" alt="Пародонтология демонстрационное изображение">
+                <img src="images/gallery/services%20gallery/periodont3.jpg" alt="Пародонтология демонстрационное изображение">
+                <img src="images/gallery/services%20gallery/periodont4.jpg" alt="Пародонтология демонстрационное изображение">
+                <img src="images/gallery/services%20gallery/periodont5.jpg" alt="Пародонтология демонстрационное изображение">
+                <img src="images/gallery/services%20gallery/periodont6.jpg" alt="Пародонтология демонстрационное изображение">
+            </div>
+            <p class="service-info__accent">В ногу со временем</p>
+            <p class="article_text">В стоматологической клинике &laquo;Стомадеус&raquo; осуществляют пародонтологическое лечение с
+                применением самых современных технологий, что позволяет провести эффективное лечение даже в самых
+                сложных ситуациях и сохранить Ваши зубы. <br> <br>
+                Использование обезболивающих средств последнего поколения позволяет проводить все манипуляции
+                безболезненно и комфортно. Все препараты, в том числе для общей анестезии, подбираются врачом
+                индивидуально для каждого пациента.</p>
+            <p class="service-info__accent">Лечение и диагностика болезней пародонта</p>
+            <p class="article_text">Насчитывается около 20 болезней пародонта. Наиболее часто встречающиеся из них:</p>
+            <ul class="general-listing">
+                <li><a href="" class="links-in-article">Гингивит</a></li>
+                <li><a href="" class="links-in-article">Пародонтит</a></li>
+                <li><a href="" class="links-in-article">Пародонтоз</a></li>
+            </ul>
+            <p class="article_text">Причины заболеваний пародонта, как правило, обусловлены состоянием бактериального
+                фона полости рта, слабым иммунитетом, наследственной предрасположенностью, биологическими особенностями
+                организма, а также аномалиями прикуса и неправильной гигиеной.</p>
+            <p class="service-info__accent">Когда следует обратиться к пародонтологу?</p>
+            <p class="article_text">На прием к пародонтологу можно попасть по направлению врача-стоматолога или при
+                обнаружении у себя признаков заболеваний дёсен. Показанием для этого являются такие симптомы:</p>
+            <ul class="general-listing">
+                <li>болезненность, воспаление и кровоточивость дёсен;</li>
+                <li>подвижность зубов;</li>
+                <li>боль во время чистки зубов;</li>
+                <li>оголение шейки зубов;</li>
+                <li>болезненность десен во время еды;</li>
+                <li>неприятный запах изо рта при отсутствии кариеса.</li>
+            </ul>
+        </div>
+        <div class="service__links">
+            <a href="consult.html" class="service__links__item">Консультация врача</a>
+            <a href="dental-treatment.html" class="service__links__item">Лечение зубов</a>
+            <a href="periodontology.html" class="service__links__item">Пародонтология</a>
+            <a href="surgery.html" class="service__links__item">Хирургия и имплантация</a>
+            <a href="prosthesis.html" class="service__links__item">Протезирование зубов</a>
+            <a href="whitening.html" class="service__links__item">Отбеливание зубов</a>
+            <a href="kids-dental.html" class="service__links__item">Детская стоматология</a>
+            <a href="mailto:muratx10@gmail.com" class="adblock"
+               title="Нажмите сюда чтоб связаться с администратором по электронной почте"></a>
+        </div>
+    </div>
+</div>
+
+<!--CALLBACK MODAL-->
+<div class="modal-block" id="modal-window-callback">
+    <form class="modal__form">
+        <fieldset>
+            <legend>Заказать звонок</legend>
+            <div class="usrName">
+                <label for="enter-name">Имя</label>
+                <input type="text" id="enter-name" name="enter-name" placeholder="Введите ваше имя" value="" required
+                       oninvalid="this.setCustomValidity('Введите пожалуйста Ваше имя')">
+            </div>
+            <div class="usrPhone">
+                <label for="enterNumber">№ телефона:</label>
+                <input type="tel" id="enterNumber" name="enterNumber" placeholder="Введите ваш номер телефона" value=""
+                       maxlength="13" minlength="13" required
+                       oninvalid="this.setCustomValidity('Перед тем как оставить отзыв, оставьте свой номер для связи с Вами')">
+            </div>
+            <div class="time-pick">
+                <label for="#">Выберите удобное для Вас время:</label>
+                <div class="timepick-input">
+                    <label for="time-picker-1">с</label>
+                    <input type="text" id="time-picker-1" class="timepicker">
+                    <label for="time-picker-2">по</label>
+                    <input type="text" id="time-picker-2" class="timepicker">
+                </div>
+            </div>
+            <a href="#" id="submit-btn" class="submit-btn submitCallback">Отправить</a>
+            <a href="#" id="close-modal" class="submit-btn close-btn">Отменить</a>
+        </fieldset>
+    </form>
+</div>
+<!--ONLINE REGISTRATION MODAL-->
+<div class="modal-block" id="modal-window-onlineReg">
+    <form class="modal__form">
+        <fieldset>
+            <legend>Запись на прием онлайн</legend>
+            <div class="usrName">
+                <label for="enter-name">Имя</label>
+                <input type="text" id="enter-name" name="enter-name" placeholder="Введите ваше имя" value="" required
+                       oninvalid="this.setCustomValidity('Введите пожалуйста Ваше имя')">
+            </div>
+            <div class="usrSurname">
+                <label for="enter-surname">Фамилия</label>
+                <input type="text" id="enter-surname" name="enter-surname" placeholder="Введите вашу фамилию" value=""
+                       required
+                       oninvalid="this.setCustomValidity('Введите пожалуйста Вашу фамилию')">
+            </div>
+            <div class="usrOtherName">
+                <label for="enter-otherName">Отчество</label>
+                <input type="text" id="enter-otherName" name="enter-otherName" placeholder="Введите ваше отчество"
+                       value="" required
+                       oninvalid="this.setCustomValidity('Введите пожалуйста Ваше отчество')">
+            </div>
+            <div class="usrPhone">
+                <label for="enterNumber">№ телефона:</label>
+                <input type="tel" id="enterNumber" name="enterNumber" placeholder="Введите ваш номер телефона" value=""
+                       maxlength="13" minlength="13" required
+                       oninvalid="this.setCustomValidity('Перед тем как оставить отзыв, оставьте свой номер для связи с Вами')">
+            </div>
+            <div class="time-pick">
+                <label for="date-picker">Выберите дату:</label>
+                <input type="text" id="date-picker" value="">
+            </div>
+            <a href="#" id="submit-btn" class="submit-btn submitOnlinReg">Отправить</a>
+            <a href="#" id="close-modal" class="submit-btn close-btn">Отменить</a>
+        </fieldset>
+    </form>
+</div>
+
+<!-- FOOTER -->
+
+<div class="wrapper">
+    <div class="footer">
+        <div class="footer__contacts">
+            <h3 class="footer__contacts__title">Наши телефоны:</h3>
+            <a href="tel:+375336012012" class="footer__contacts__item"><span class="icon-mobile"></span>&nbsp;+375 (33)
+                6-012-012 (МТС)</a>
+            <a href="tel:+375336012012" class="footer__contacts__item"><span class="icon-mobile"></span>&nbsp;+375 (44)
+                6-012-012 (Velcom)</a>
+            <h3 class="footer__contacts__title">Наш электронный адрес:</h3>
+            <a href="mailto:muratx10@gmail.com" class="footer__contacts__item"><span class="icon-envelope">&nbsp;</span>info@stomadeus.by</a>
+        </div>
+        <div class="call-back">
+            <a href="#" class="call-back__item" id="callBackButton">Заказать звонок</a>
+            <a href="#" class="call-back__item onlineRegButton" id="onlineRegButton">Онлайн-запись</a>
+            <!-- здесь при клике должно быть модальное окно с формой -->
+            <a href="about.html#jump-to-map" class="call-back__item"></a>
+        </div>
+        <div class="footer__site-map">
+            <div class="footer__site-map__services-wrap">
+                <ul class="footer__site-map__services">
+                    <li class="site-map__services__item"><a href="consult.html" class="site-map__services__link">Консультация
+                        врача</a></li>
+                    <li class="site-map__services__item"><a href="dental-treatment.html"
+                                                            class="site-map__services__link">Лечение зубов</a>
+                    </li>
+                    <li class="site-map__services__item"><a href="periodontology.html" class="site-map__services__link">Пародонтология</a>
+                    </li>
+                    <li class="site-map__services__item"><a href="surgery.html" class="site-map__services__link">Хирургия и
+                        имплантация</a></li>
+                    <li class="site-map__services__item"><a href="prosthesis.html" class="site-map__services__link">Протезирование
+                        зубов</a></li>
+                    <li class="site-map__services__item"><a href="whitening.html" class="site-map__services__link">Отбеливание
+                        зубов</a></li>
+                    <li class="site-map__services__item"><a href="kids-dental.html" class="site-map__services__link">Детская
+                        стоматология</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__address">
+            <p>ЧУП &#171;Стомадеус&#187;,</p>
+            <p>&nbsp;г.Брест, ул.Комсомольская 34,</p>
+            <p>&nbsp;Почтовый индекс: 224000</p>
+            <div class="footer__payment">
+                <object data="images/visa.svg" type="image/svg+xml" width="30"></object>
+                <object data="images/mastercard.svg" type="image/svg+xml" width="30"></object>
+                <object data="images/maestro.svg" type="image/svg+xml" width="30"></object>
+                <object data="images/belcard.svg" type="image/svg+xml" width="30"></object>
+            </div>
+        </div>
+        <div class="footer__social">
+            <h3 class="footer__social__title">Мы в социальных сетях</h3>
+            <a href="#" class="footer__social__icon"><span class="icon-facebook">&nbsp;</span>Facebook</a>
+            <a href="#" class="footer__social__icon"><span class="icon-twitter">&nbsp;</span>Twitter</a>
+            <a href="#" class="footer__social__icon"><span class="icon-skype">&nbsp;</span>Skype</a>
+        </div>
+    </div>
+    <hr>
+    <div class="footer__copyright">
+        <span class="copyright">ЧУП «Стомадеус»&nbsp;&copy;&nbsp;2018г. Все права защищены</span>
+    </div>
+</div>
+
+
+<script src="scripts/jquery-3.3.1.min.js"></script>
+<script src="scripts/moment.min.js"></script>
+<script src="scripts/daterangepicker.js"></script>
+<script src="scripts/slick.min.js"></script>
+<script src="scripts/jquery-confirm.min.js"></script>
+<script src="scripts/SmoothScroll.js"></script>
+<script src="scripts/jquery.timepicker.min.js"></script>
+<script src="scripts/default.js"></script>
+
+</body>
